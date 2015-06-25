@@ -1,2 +1,3 @@
 genome sacCer1_ext
 trackDb sacCer1_ext/trackDb.txt
+twoBitPath sacCer1_ext/sacCer1_ext.2bit
