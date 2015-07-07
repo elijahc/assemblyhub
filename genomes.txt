@@ -1,3 +1,7 @@
 genome sacCer1_ext
-trackDb sacCer1_ext/trackDb.txt
+trackDb trackDb.txt
 twoBitPath sacCer1_ext/sacCer1_ext.2bit
+organism Saccharomyces cerevisiae
+description sacCer1_ext
+defaultPos chr1:1-300000
+

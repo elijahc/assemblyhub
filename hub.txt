@@ -1,0 +1,5 @@
+hub segway 
+shortLabel segway 
+longLabel segway stuff 
+genomesFile genomes.txt 
+email ejd.christensen@gmail.com

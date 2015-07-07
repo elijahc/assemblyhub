@@ -1,11 +1,9 @@
 track mRNAs
 shortLabel mRNAs
 longLabel mRNA models
-labelOnFeature on
 type bigBed 12 +
 visibility pack
-bigDataUrl mrna/mRNAs.bb
+bigDataUrl gene-models/mRNAs.bb
 colorByStrand 202,0,32 5,113,176
 searchIndex name
-searchTrix mrna/sgdDescription.ix
 

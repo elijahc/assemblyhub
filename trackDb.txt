@@ -1,0 +1,161 @@
+track Segmentations 
+superTrack on
+shortLabel segway
+longLabel segway stuff 
+visibility full
+type bigBed 12 .
+
+    track SRR1363412.0 
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363412.identify/segway.0.layered.bb
+    shortLabel SRR1363412 pos
+    longLabel SRR1363412.0  - Untreated rep 1 positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363412.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363412.identify/segway.1.layered.bb
+    shortLabel SRR1363412 neg
+    longLabel SRR1363412.1 - Untreated rep 1 negative strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363413.0 
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363413.identify/segway.0.layered.bb
+    shortLabel SRR1363413 pos
+    longLabel SRR1363413.0 - Untreated rep 2 positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363413.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363413.identify/segway.1.layered.bb
+    shortLabel SRR1363413 neg
+    longLabel SRR1363413.1 - Untreated rep 2 negative strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363414.0 
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363414.identify/segway.0.layered.bb
+    shortLabel SRR1363414 pos
+    longLabel SRR1363414.0  - Untreated rep 3 positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363414.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363414.identify/segway.1.layered.bb
+    shortLabel SRR1363414 neg
+    longLabel SRR1363414.1 - Untreated rep 3 negative strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363416.0 
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363416.identify/segway.0.layered.bb
+    shortLabel SRR1363416 pos
+    longLabel SRR1363416.0 - Cycloheximide arrested positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363416.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363416.identify/segway.1.layered.bb
+    shortLabel SRR1363416 neg
+    longLabel SRR1363416.1 - Cycloheximide arrested negative strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363419.0
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363419.identify/segway.0.layered.bb
+    shortLabel a_pos
+    longLabel SRR1363419.0  - Anisomycin arrested positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1363419.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/SRR1363419.identify/segway.1.layered.bb
+    shortLabel a_neg
+    longLabel SRR1363419.1 - Anisomycin arrested minus strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+track mRNA
+superTrack on show
+shortLabel mRNA 
+longLabel mRNA gene models and analysis
+
+    track mRNA-models
+    parent mRNA
+    shortLabel mRNAs
+    longLabel mRNA models
+    type bigBed 12 +
+    visibility pack
+    bigDataUrl sacCer1_ext/rna/gene-models/mRNAs.bb
+    colorByStrand 202,0,32 5,113,176
+    searchIndex name
+
+    track mRNA-seq
+    parent mRNA
+    container multiWig
+    aggregate transparentOverlay
+    showSubtrackColorOnUi on
+    shortLabel RNA-seq
+    longLabel strand-specific RNA-seq (Levin et al. (2010) Nat Methods)
+    type bigWig 0 1e-6
+    viewLimits 0:1e-6
+    maxHeightPixels 32:64:11
+    visibility full
+
+        track pos
+        parent mRNA-seq
+        shortLabel pos strand
+        visibility full
+        bigDataUrl sacCer1_ext/rna/rna-seq/regev.pos.bw
+        color 202,0,32
+        type bigWig
+        viewLimits 0:1e-6
+
+        track neg
+        parent mRNA-seq
+        shortLabel neg strand
+        visibility full
+        bigDataUrl sacCer1_ext/rna/rna-seq/regev.neg.rescale.bw
+        color 5,113,176
+        type bigWig
+        viewLimits 0:1e-6
