@@ -1,11 +1,11 @@
-track Segmentations 
+track Segmentations
 superTrack on
 shortLabel segway
-longLabel segway stuff 
+longLabel segway stuff
 visibility full
 type bigBed 12 .
 
-    track SRR1363412.0 
+    track SRR1363412.0
     parent Segmentations
     bigDataUrl sacCer1_ext/SRR1363412.identify/segway.0.layered.bb
     shortLabel SRR1363412 pos
@@ -117,7 +117,7 @@ type bigBed 12 .
 
 track mRNA
 superTrack on show
-shortLabel mRNA 
+shortLabel mRNA
 longLabel mRNA gene models and analysis
 
     track mRNA-models
@@ -159,3 +159,45 @@ longLabel mRNA gene models and analysis
         color 5,113,176
         type bigWig
         viewLimits 0:1e-6
+
+    track Ribosome-Footprints
+    parent mRNA
+    compositeTrack on
+    shortLabel Ribosome footprints
+    longLabel Ribosome Footprints Coverage and Peaks tracks
+    subGroup1 view Views COV=Coverage
+    subGroup2 strain Strain WT=wild-type
+    subGroup3 treatment Treatment NONE=None CHX=CHX
+    subGroup4 strand Strand pos=pos neg=neg
+    dimensions dimX=treatment dimY=strain dimA=strand dimB=size
+    filterComposite dimA dimB
+    sortOrder view=- strand=+
+    type bed 6 .
+
+        track Coverage
+        view COV
+        parent Ribosome-Footprints
+        shortLabel Coverage
+        visibility full
+        type bigWig
+        autoScale on
+
+            track SRR1363413.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl rna/ribosome-profiling/lareau_2014/SRR1363413/all.pos.bw
+            shortLabel WT.NONE
+            longLabel SRR1363413 wild-type no additive pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363413.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=NONE
+            bigDataUrl rna/ribosome-profiling/lareau_2014/SRR1363413/all.neg.bw
+            shortLabel WT.NONE
+            longLabel SRR1363413 wild-type no additive neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
