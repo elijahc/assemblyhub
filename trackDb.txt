@@ -5,9 +5,53 @@ longLabel segway stuff
 visibility full
 type bigBed 12 .
 
+    track SRR1042853.0
+    parent Segmentations
+    bigDataUrl sacCer1_ext/guydosh_2013/SRR1042853.identify/segway.0.layered.bb
+    shortLabel SRR1042853 pos
+    longLabel SRR1042853.0  - Cycloheximide rep 1 positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1042853.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/guydosh_2013/SRR1042853.identify/segway.1.layered.bb
+    shortLabel SRR1042853 neg
+    longLabel SRR1042853.1 - Cycloheximide rep 1 negative strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1042855.0 
+    parent Segmentations
+    bigDataUrl sacCer1_ext/guydosh_2013/SRR1042855.identify/segway.0.layered.bb
+    shortLabel SRR1042855 pos
+    longLabel SRR1042855.0 - Untreated rep 1 positive strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1042855.1
+    parent Segmentations
+    bigDataUrl sacCer1_ext/guydosh_2013/SRR1042855.identify/segway.1.layered.bb
+    shortLabel SRR1042855 neg
+    longLabel SRR1042855.1 - Untreated rep 1 negative strand
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
     track SRR1363412.0
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363412.identify/segway.0.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363412.identify/segway.0.layered.bb
     shortLabel SRR1363412 pos
     longLabel SRR1363412.0  - Untreated rep 1 positive strand
     type bigBed 12 .
@@ -18,7 +62,7 @@ type bigBed 12 .
 
     track SRR1363412.1
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363412.identify/segway.1.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363412.identify/segway.1.layered.bb
     shortLabel SRR1363412 neg
     longLabel SRR1363412.1 - Untreated rep 1 negative strand
     type bigBed 12 .
@@ -29,7 +73,7 @@ type bigBed 12 .
 
     track SRR1363413.0 
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363413.identify/segway.0.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363413.identify/segway.0.layered.bb
     shortLabel SRR1363413 pos
     longLabel SRR1363413.0 - Untreated rep 2 positive strand
     type bigBed 12 .
@@ -40,7 +84,7 @@ type bigBed 12 .
 
     track SRR1363413.1
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363413.identify/segway.1.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363413.identify/segway.1.layered.bb
     shortLabel SRR1363413 neg
     longLabel SRR1363413.1 - Untreated rep 2 negative strand
     type bigBed 12 .
@@ -51,7 +95,7 @@ type bigBed 12 .
 
     track SRR1363414.0 
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363414.identify/segway.0.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363414.identify/segway.0.layered.bb
     shortLabel SRR1363414 pos
     longLabel SRR1363414.0  - Untreated rep 3 positive strand
     type bigBed 12 .
@@ -62,7 +106,7 @@ type bigBed 12 .
 
     track SRR1363414.1
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363414.identify/segway.1.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363414.identify/segway.1.layered.bb
     shortLabel SRR1363414 neg
     longLabel SRR1363414.1 - Untreated rep 3 negative strand
     type bigBed 12 .
@@ -73,7 +117,7 @@ type bigBed 12 .
 
     track SRR1363416.0 
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363416.identify/segway.0.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363416.identify/segway.0.layered.bb
     shortLabel SRR1363416 pos
     longLabel SRR1363416.0 - Cycloheximide arrested positive strand
     type bigBed 12 .
@@ -84,7 +128,7 @@ type bigBed 12 .
 
     track SRR1363416.1
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363416.identify/segway.1.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363416.identify/segway.1.layered.bb
     shortLabel SRR1363416 neg
     longLabel SRR1363416.1 - Cycloheximide arrested negative strand
     type bigBed 12 .
@@ -95,7 +139,7 @@ type bigBed 12 .
 
     track SRR1363419.0
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363419.identify/segway.0.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363419.identify/segway.0.layered.bb
     shortLabel a_pos
     longLabel SRR1363419.0  - Anisomycin arrested positive strand
     type bigBed 12 .
@@ -106,7 +150,7 @@ type bigBed 12 .
 
     track SRR1363419.1
     parent Segmentations
-    bigDataUrl sacCer1_ext/SRR1363419.identify/segway.1.layered.bb
+    bigDataUrl sacCer1_ext/segway/SRR1363419.identify/segway.1.layered.bb
     shortLabel a_neg
     longLabel SRR1363419.1 - Anisomycin arrested minus strand
     type bigBed 12 .
@@ -161,16 +205,16 @@ longLabel mRNA gene models and analysis
         viewLimits 0:1e-6
 
     track Ribosome-Footprints
-    parent mRNA
     compositeTrack on
+    parent mRNA
     shortLabel Ribosome footprints
     longLabel Ribosome Footprints Coverage and Peaks tracks
     subGroup1 view Views COV=Coverage
     subGroup2 strain Strain WT=wild-type
     subGroup3 treatment Treatment NONE=None CHX=CHX
     subGroup4 strand Strand pos=pos neg=neg
-    dimensions dimX=treatment dimY=strain dimA=strand dimB=size
-    filterComposite dimA dimB
+    dimensions dimX=treatment dimY=strain dimA=strand
+    filterComposite dimA
     sortOrder view=- strand=+
     type bed 6 .
 
@@ -182,12 +226,122 @@ longLabel mRNA gene models and analysis
         type bigWig
         autoScale on
 
+            track SRR1042855.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/guydosh_2013/SRR1042855/all.neg.bw
+            shortLabel WT.NEG.CHX
+            longLabel SRR1042855 wild-type CHX neg
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042855.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/guydosh_2013/SRR1042855/all.pos.bw
+            shortLabel WT.POS.CHX
+            longLabel SRR1042855 wild-type CHX pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042855.pos.0-1.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/guydosh_by_dyads/SRR1042855/SRR1042855.0-1.pos.bw
+            shortLabel WT.POS.0-1.CHX
+            longLabel SRR1042855 wild-type CHX pos frame dyad 0-1
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042855.pos.1-2.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/guydosh_by_dyads/SRR1042855/SRR1042855.1-2.pos.bw
+            shortLabel WT.POS.1-2.CHX
+            longLabel SRR1042855 wild-type CHX pos frame dyad 1-2
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1042855.pos.2-0.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/guydosh_by_dyads/SRR1042855/SRR1042855.2-0.pos.bw
+            shortLabel WT.POS.2-0.CHX
+            longLabel SRR1042855 wild-type CHX pos frame dyad 2-0
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
             track SRR1363413.pos.coverage
             parent Coverage
             subGroups view=COV strain=WT strand=pos treatment=NONE
-            bigDataUrl rna/ribosome-profiling/lareau_2014/SRR1363413/all.pos.bw
-            shortLabel WT.NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363413/all.pos.bw
+            shortLabel WT.POS.NONE
             longLabel SRR1363413 wild-type no additive pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363412.pos.0-1.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363412/SRR1363412.0-1.pos.bw
+            shortLabel WT.POS.NONE.0-1
+            longLabel SRR1363412 wild-type no additive pos frame 0-1
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363412.pos.1-2.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363412/SRR1363412.1-2.pos.bw
+            shortLabel WT.NONE.1-2
+            longLabel SRR1363412 wild-type no additive pos frame 1-2
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363412.pos.2-0.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363412/SRR1363412.2-0.pos.bw
+            shortLabel WT.NONE.2-0
+            longLabel SRR1363412 wild-type no additive pos frame 2-0
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363413.pos.0-1.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363413/SRR1363413.0-1.pos.bw
+            shortLabel WT.NONE.0-1
+            longLabel SRR1363413 wild-type no additive pos frame 0-1
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363413.pos.1-2.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363413/SRR1363413.1-2.pos.bw
+            shortLabel WT.NONE.1-2
+            longLabel SRR1363413 wild-type no additive pos frame 1-2
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363413.pos.2-0.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=NONE
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363413/SRR1363413.2-0.pos.bw
+            shortLabel WT.NONE.2-0
+            longLabel SRR1363413 wild-type no additive pos frame 2-0
             maxHeightPixels 30:30:10
             color 202,0,32
             type bigWig
@@ -195,9 +349,29 @@ longLabel mRNA gene models and analysis
             track SRR1363413.neg.coverage
             parent Coverage
             subGroups view=COV strain=WT strand=neg treatment=NONE
-            bigDataUrl rna/ribosome-profiling/lareau_2014/SRR1363413/all.neg.bw
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363413/all.neg.bw
             shortLabel WT.NONE
             longLabel SRR1363413 wild-type no additive neg
+            maxHeightPixels 30:30:10
+            color 5,113,176
+            type bigWig
+
+            track SRR1363416.pos.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=pos treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363416/all.pos.bw
+            shortLabel WT.CHX
+            longLabel SRR1363416 wild-type CHX pos
+            maxHeightPixels 30:30:10
+            color 202,0,32
+            type bigWig
+
+            track SRR1363416.neg.coverage
+            parent Coverage
+            subGroups view=COV strain=WT strand=neg treatment=CHX
+            bigDataUrl sacCer1_ext/rna/ribosome-profiling/lareau_2014/SRR1363416/all.neg.bw
+            shortLabel WT.CHX
+            longLabel SRR1363416 wild-type CHX neg
             maxHeightPixels 30:30:10
             color 5,113,176
             type bigWig
