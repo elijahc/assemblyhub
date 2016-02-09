@@ -12,3 +12,250 @@ longLabel mRNA gene models
     bigDataUrl rna/gene-models/mRNAs.bb
     colorByStrand 202,0,32 5,113,176
     searchIndex name
+
+    track Slippery-Sequences
+    parent mRNA
+    shortLabel slip_seqs
+    longLabel Slippery Sequence Sites
+    type bigBed 6 +
+    visibility pack
+    bigDataUrl rna/gene-models/slip_seqs.pos.0.bb
+    colorByStrand 202,0,32 5,113,176
+    searchIndex name
+
+track cycloheximide_fractional_coverage
+container multiWig
+aggregate stacked
+shortLabel cycloheximide-coverage
+longLabel Cycloheximide-Read-frame-coverage
+showSubtrackColorOnUi on
+type bigWig 0 1
+viewLimits 0:1
+maxHeighPixels 30:30:10
+
+    track SRR1042853.2.multiWig.coverage
+    parent cycloheximide_fractional_coverage
+    bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.50frac.2.bw
+    color 27,158,119
+    type bigWig
+
+    track SRR1042853.1.multiWig.coverage
+    parent cycloheximide_fractional_coverage
+    bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.50frac.1.bw
+    color 117,112,179 
+    type bigWig
+
+    track SRR1042853.0.multiWig.coverage
+    parent cycloheximide_fractional_coverage
+    bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.50frac.0.bw
+    color 217,95,2
+    type bigWig
+
+track untreated_fractional_coverage
+container multiWig
+aggregate stacked
+shortLabel untreated_coverage
+longLabel Untreated-Read-frame-coverage
+showSubtrackColorOnUi on
+type bigWig 0 1
+viewLimits 0:1
+maxHeighPixels 30:30:10
+
+    track SRR1042855.0.multiWig.coverage
+    parent untreated_fractional_coverage
+    bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.50frac.0.bw
+    color 217,95,2
+    type bigWig
+
+    track SRR1042855.1.multiWig.coverage
+    parent untreated_fractional_coverage
+    bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.50frac.1.bw
+    color 117,112,179
+    type bigWig
+
+    track SRR1042855.2.multiWig.coverage
+    parent untreated_fractional_coverage
+    bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.50frac.2.bw
+    color 27,158,119
+    type bigWig
+
+track Ribosome-Footprints
+compositeTrack on
+parent mRNA
+shortLabel Ribosome footprints
+longLabel Ribosome Footprints Coverage and Peaks tracks
+subGroup1 view Views MONO=Mono-Coverage DYAD=Dyad-Coverage
+subGroup2 strain Strain WT=wild-type
+subGroup3 treatment Treatment NONE=None CHX=CHX
+subGroup4 strand Strand pos=pos neg=neg both=both
+dimensions dimX=treatment dimY=strain dimA=strand
+filterComposite dimA
+sortOrder view=- strand=+
+type bed 6 .
+
+    track DYAD-Coverage
+    view DYAD
+    parent Ribosome-Footprints
+    shortLabel DYAD-Coverage
+    visibility full
+    type bigWig
+    autoScale on
+
+        track SRR1042853.0-1.coverage
+        parent DYAD-Coverage
+        subGroups view=DYAD strain=WT strand=both treatment=CHX
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.0-1.bw
+        shortLabel WT.BOTH.CHX.0-1
+        longLabel SRR1042853 wild-type Cycloheximide frame 0-1
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042853.1-2.coverage
+        parent DYAD-Coverage
+        subGroups view=DYAD strain=WT strand=both treatment=CHX
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.1-2.bw
+        shortLabel WT.BOTH.CHX.1-2
+        longLabel SRR1042853 wild-type Cycloheximide frame 1-2
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042853.2-0.coverage
+        parent DYAD-Coverage
+        subGroups view=DYAD strain=WT strand=both treatment=CHX
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.2-0.bw
+        shortLabel WT.BOTH.CHX.2-0
+        longLabel SRR1042853 wild-type Cycloheximide frame 2-0
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+
+        track SRR1042855.0-1.coverage
+        parent DYAD-Coverage
+        subGroups view=DYAD strain=WT strand=both treatment=NONE
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.0-1.bw
+        shortLabel WT.BOTH.NONE.0-1
+        longLabel SRR1042855 wild-type Untreated frame 0-1
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042855.1-2.coverage
+        parent DYAD-Coverage
+        subGroups view=DYAD strain=WT strand=both treatment=NONE
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.1-2.bw
+        shortLabel WT.BOTH.NONE.1-2
+        longLabel SRR1042855 wild-type Untreated frame 1-2
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042855.2-0.coverage
+        parent DYAD-Coverage
+        subGroups view=DYAD strain=WT strand=both treatment=NONE
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.2-0.bw
+        shortLabel WT.BOTH.NONE.2-0
+        longLabel SRR1042855 wild-type Untreated frame 2-0
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+    track Mono-Coverage
+    view MONO
+    parent Ribosome-Footprints
+    shortLabel MONO-Coverage
+    visibility full
+    type bigWig
+    autoScale on
+
+        track SRR1042853.0.coverage
+        parent Mono-Coverage
+        subGroups view=MONO strain=WT strand=both treatment=CHX
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.50frac.0.bw
+        shortLabel WT.BOTH.CHX.0
+        longLabel SRR1042853 wild-type Cycloheximide frame 0
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042853.1.coverage
+        parent Mono-Coverage
+        subGroups view=MONO strain=WT strand=both treatment=CHX
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.50frac.1.bw
+        shortLabel WT.BOTH.CHX.1
+        longLabel SRR1042853 wild-type Cycloheximide frame 1
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042853.2.coverage
+        parent Mono-Coverage
+        subGroups view=MONO strain=WT strand=both treatment=CHX
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042853/SRR1042853.50frac.2.bw
+        shortLabel WT.BOTH.CHX.2
+        longLabel SRR1042853 wild-type Cycloheximide frame 2
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042855.0.coverage
+        parent Mono-Coverage
+        subGroups view=MONO strain=WT strand=both treatment=NONE
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.50frac.0.bw
+        shortLabel WT.BOTH.NONE.0
+        longLabel SRR1042855 wild-type Untreated frame 0
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042855.1.coverage
+        parent Mono-Coverage
+        subGroups view=MONO strain=WT strand=both treatment=NONE
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.50frac.1.bw
+        shortLabel WT.BOTH.NONE.1
+        longLabel SRR1042855 wild-type Untreated frame 1
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+        track SRR1042855.2.coverage
+        parent Mono-Coverage
+        subGroups view=MONO strain=WT strand=both treatment=NONE
+        bigDataUrl rna/ribosome-profiling/guydosh_2013/SRR1042855/SRR1042855.50frac.2.bw
+        shortLabel WT.BOTH.NONE.2
+        longLabel SRR1042855 wild-type Untreated frame 2
+        maxHeightPixels 30:30:10
+        color 202,0,32
+        type bigWig
+
+track Segmentations
+superTrack on
+shortLabel segway
+longLabel segway stuff
+visibility full
+type bigBed 12 .
+
+    track SRR1042853
+    parent Segmentations
+    bigDataUrl guydosh_2013/SRR1042853.identify/segway.layered.bb
+    shortLabel SRR1042853
+    longLabel SRR1042853  - Cycloheximide rep 1
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
+    track SRR1042855
+    parent Segmentations
+    bigDataUrl guydosh_2013/SRR1042855.identify/segway.layered.bb
+    shortLabel SRR1042855
+    longLabel SRR1042855  - Untreated rep 1
+    type bigBed 12 .
+    autoScale off
+    viewLimits 0:1
+    visibility full
+    itemRgb on
+
